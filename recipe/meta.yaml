@@ -7,9 +7,6 @@
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
-{% set sha256 = "d24ea1a5936bba021a68c797a552628446aa6470c4d90b2e860673154083a716" %}
-{% set sha256_win64 = "bea9ad47f87a7a667448f2b8a26beb7feddacc94d0bc09f17b83e459be9234b0" %}
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -17,7 +14,7 @@ package:
 source:
   - folder:  {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: {{ sha256 }}
+    sha256: d24ea1a5936bba021a68c797a552628446aa6470c4d90b2e860673154083a716
 
 
 build:
