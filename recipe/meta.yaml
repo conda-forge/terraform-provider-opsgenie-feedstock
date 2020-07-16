@@ -1,6 +1,6 @@
 {% set provider = "OpsGenie" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: e9f4243407a8aa36ad0f733906a0463e99a0138a6ba81733f4ad5de2310a3fd3
+  sha256: 90bb73541ef6e870ca88a9a69d435c8cf653840a8736ce3d5ccd66b09382cd8b
 
 build:
   number: 0
